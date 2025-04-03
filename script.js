@@ -1,8 +1,16 @@
 const todoInput = document.getElementById('todo-input');
 const addTodoButton = document.getElementById('add-todo');
 const todoList = document.getElementById('todo-list');
-console.log("hello");
-addTodoButton.addEventListener('click', () => {
+
+addTodoButton.addEventListener('click', addTodo);
+
+todoInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        addTodoButton.click(); // Simulate click on Enter
+    }
+});
+
+function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText) {
         const li = document.createElement('li');
@@ -14,11 +22,7 @@ addTodoButton.addEventListener('click', () => {
         textSpan.textContent = todoText;
         
         checkbox.addEventListener('change', () => {
-            if (checkbox.checked) {
-                textSpan.style.textDecoration = 'line-through'; // Apply only to text
-            } else {
-                textSpan.style.textDecoration = 'none';
-            }
+            textSpan.style.textDecoration = checkbox.checked ? 'line-through' : 'none';
         });
 
         const removeButton = document.createElement('button');
@@ -28,10 +32,10 @@ addTodoButton.addEventListener('click', () => {
         });
         
         li.appendChild(checkbox);
-        li.appendChild(textSpan); // Only this should be strikethrough
+        li.appendChild(textSpan);
         li.appendChild(removeButton);
         todoList.appendChild(li);
         
         todoInput.value = ''; 
     }
-});
+}
