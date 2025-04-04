@@ -79,7 +79,7 @@ li {
 li button {
     background: #dc3545;
     border-radius: 8px;
-    padding: 8px 12px;
+    padding: 10px 12px;
     font-size: 14px;
     transition: 0.3s;
 }
