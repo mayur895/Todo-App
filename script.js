@@ -1,7 +1,9 @@
 const todoInput = document.getElementById('todo-input');
 const addTodoButton = document.getElementById('add-todo');
 const todoList = document.getElementById('todo-list');
-console.log("hey developer");
+
+
+console.log(todoInput);
 addTodoButton.addEventListener('click', addTodo);
 
 todoInput.addEventListener('keydown', (event) => {
