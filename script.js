@@ -3,7 +3,7 @@ const addTodoButton = document.getElementById('add-todo');
 const todoList = document.getElementById('todo-list');
 
 
-console.log(todoInput);
+console.log("hello world");
 addTodoButton.addEventListener('click', addTodo);
 
 todoInput.addEventListener('keydown', (event) => {
