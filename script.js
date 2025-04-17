@@ -8,7 +8,6 @@ todoInput.addEventListener('keydown', (event) => {
         addTodoButton.click(); // Simulate click on Enter
     }
 });
-console.log("Hello");
 function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText) {
