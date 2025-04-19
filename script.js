@@ -2,7 +2,7 @@ const todoInput = document.getElementById('todo-input');
 const addTodoButton = document.getElementById('add-todo');
 const todoList = document.getElementById('todo-list');// hey 
 addTodoButton.addEventListener('click', addTodo);
-
+console.log("hello buddy")
 todoInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         addTodoButton.click(); // Simulate click on Enter
