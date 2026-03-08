@@ -1,6 +1,6 @@
 const todoInput = document.getElementById('todo-input');
 const addTodoButton = document.getElementById('add-todo');
-const todoList = document.getElementById('todo-list');// hey 
+const todoList = document.getElementById('todo-list');
 addTodoButton.addEventListener('click', addTodo);
 console.log("hello buddy")
 todoInput.addEventListener('keydown', (event) => {
