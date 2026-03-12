@@ -24,7 +24,7 @@ function addTodo() {
         });
 
         const removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove';
+        removeButton.textContent = 'Remove ';
         removeButton.addEventListener('click', () => {
             todoList.removeChild(li);
         });
