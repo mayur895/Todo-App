@@ -5,7 +5,7 @@ addTodoButton.addEventListener('click', addTodo);
 console.log("hello buddy")
 todoInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
-        addTodoButton.click(); // Simulate click on Enter
+        addTodoButton.click(); // Simulate click on Enter  
     }
 });
 function addTodo() {
