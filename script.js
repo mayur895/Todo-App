@@ -7,7 +7,7 @@ todoInput.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         addTodoButton.click(); 
     }
-}); // 
+}); // yup
 function addTodo() {
     const todoText = todoInput.value.trim();
     if (todoText) {
